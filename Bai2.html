@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const PI = 3.14;
+    // Function to calculate area of a circle
+    function area(a) {
+        return PI*a*a;
+    }
+    // Function to calculate circumference of a circle
+    function circumference(b) {
+        return 2*PI*b;
+    }
+
+    var r = parseFloat(prompt("Enter r: "));
+    var cirArea = area(r);
+    var cirCircum = circumference(r);
+
+    document.write("A circle with r = "+r+" has area of "+cirArea + " and circumference of "+cirCircum);
+
+</script>
+</body>
+</html>

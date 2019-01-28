@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Enter something in the following box:
+<input type="text" id="input1" oninput="result(this.value)"/>
+<p id="ans"></p>
+<script>
+    function isNumber(x) {
+        if (isNaN(x)) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    function result(x) {
+        var ans = isNumber(x);
+        if (ans) {
+            document.getElementById("ans").innerText = x + " is a number";
+        } else {
+            document.getElementById("ans").innerText = x + " is NOT a number";
+        }
+    }
+</script>
+</body>
+</html>

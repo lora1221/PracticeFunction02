@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 6</title>
+</head>
+<body>
+<script>
+    function checkChar(char){
+        if (char == char.toUpperCase()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    var character = prompt("Enter a character: ");
+    if (checkChar(character)) {
+        alert("It is uppercase");
+    } else {
+        alert("It is not uppercase");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function minValue(a,b,c) {
+        var min = a;
+        if (a > b) {
+            if (b > c) {
+                min = c;
+            } else {
+                min = b;
+            }
+        } else {
+            if (b <= c) {
+                min = a;
+            } else {
+                if (a <= c) {
+                    min = a;
+                } else {
+                    min = c;
+                }
+            }
+        }
+        return min;
+    }
+
+    var x = parseInt(prompt("Enter a number: "));
+    var y = parseInt(prompt("Enter a number: "));
+    var z = parseInt(prompt("Enter a number: "));
+
+    var minVal = minValue(x,y,z);
+    document.write("The smallest number is "+minVal);
+</script>
+</body>
+</html>
